@@ -6,7 +6,10 @@ class Pugi < Formula
   license "MIT"
   version "0.1.0-alpha.3"
 
-  depends_on "node@20"
+  # Pin to node@22 — @pugi/cli 0.1.0-alpha.3 uses globSync from node:fs which
+  # was added in Node 22. The package.json `engines` field says >=20 but the
+  # runtime requires 22+. Bump tracked in pugi-io/pugi.
+  depends_on "node@22"
 
   def install
     system "npm", "install", "-g",
