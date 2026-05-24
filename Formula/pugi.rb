@@ -1,15 +1,12 @@
 class Pugi < Formula
   desc "Pugi CLI - terminal-native AI software execution"
   homepage "https://pugi.io"
-  url "https://registry.npmjs.org/@pugi/cli/-/cli-0.1.0-alpha.3.tgz"
-  sha256 "beb18c724bf7e97033e650fcca61d5b8dfa1c8cbd3e3681cc7b8e4f2a969deaa"
+  url "https://registry.npmjs.org/@pugi/cli/-/cli-0.1.0-alpha.5.tgz"
+  sha256 "8f91ed27fd1db872e2a19ece5b7f71e69132f3b135fb64a78994d61f9b67f9dd"
   license "MIT"
-  version "0.1.0-alpha.3"
+  version "0.1.0-alpha.5"
 
-  # Pin to node@22 — @pugi/cli 0.1.0-alpha.3 uses globSync from node:fs which
-  # was added in Node 22. The package.json `engines` field says >=20 but the
-  # runtime requires 22+. Bump tracked in pugi-io/pugi.
-  depends_on "node@22"
+  depends_on "node"
 
   def install
     system "npm", "install", "-g",
