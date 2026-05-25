@@ -1,10 +1,10 @@
 class Pugi < Formula
   desc "Pugi CLI - terminal-native AI software execution"
   homepage "https://pugi.io"
-  url "https://registry.npmjs.org/@pugi/cli/-/cli-0.1.0-alpha.9.tgz"
-  sha256 "50eacee3e6b66105597d58dc1b8d8776f2450b26106f8e5f0c12e211285441b9"
+  url "https://registry.npmjs.org/@pugi/cli/-/cli-0.1.0-alpha.10.tgz"
+  sha256 "54601eebdb84f809308db3b9a418e26e723163a48f6ca793fa5e68f5006759e1"
   license "MIT"
-  version "0.1.0-alpha.9"
+  version "0.1.0-alpha.10"
 
   depends_on "node"
 
