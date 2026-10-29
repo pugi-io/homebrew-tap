@@ -3,35 +3,35 @@
 class Pugi < Formula
   desc "Pugi CLI - terminal-native AI software execution"
   homepage "https://pugi.io"
-  version "1.0.0-alpha.251"
+  version "1.0.0-alpha.252"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://registry.npmjs.org/@pugi/cli-darwin-arm64/-/cli-darwin-arm64-1.0.0-alpha.251.tgz"
-      sha256 "d7a870f74ad8b2021f15a8bb91aa684764c09364b487da122fe9a866bb73a0dc"
+      url "https://registry.npmjs.org/@pugi/cli-darwin-arm64/-/cli-darwin-arm64-1.0.0-alpha.252.tgz"
+      sha256 "4cd0ebcb4f1c93e9d6a8784d5f09a0533cc769dfe4e80815cf25c96e49d35796"
     end
     on_intel do
-      url "https://registry.npmjs.org/@pugi/cli-darwin-x64/-/cli-darwin-x64-1.0.0-alpha.251.tgz"
-      sha256 "e6d7f8b03e376392543da608d5e0f1992df1cc11a6ae297b2ae7e3d4cf00ace9"
+      url "https://registry.npmjs.org/@pugi/cli-darwin-x64/-/cli-darwin-x64-1.0.0-alpha.252.tgz"
+      sha256 "2f43df7b7ac6c8c83dc0603c54bcd2a8fa5bc4d002e9d8a004195fbfc6be595e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://registry.npmjs.org/@pugi/cli-linux-arm64/-/cli-linux-arm64-1.0.0-alpha.251.tgz"
-      sha256 "ec942b31fb39926e290ecc249c4ce04d5045a6841b6ed256a443c6135920af06"
+      url "https://registry.npmjs.org/@pugi/cli-linux-arm64/-/cli-linux-arm64-1.0.0-alpha.252.tgz"
+      sha256 "4b1d021575e2d517d67b519f003ec7c61d50f0d8505f9008e5ca40416c74c8c8"
     end
     on_intel do
-      url "https://registry.npmjs.org/@pugi/cli-linux-x64/-/cli-linux-x64-1.0.0-alpha.251.tgz"
-      sha256 "8015e574475f23d1ede6446a6519344b7f09cbdd66ce04dcf570f7626c0615a6"
+      url "https://registry.npmjs.org/@pugi/cli-linux-x64/-/cli-linux-x64-1.0.0-alpha.252.tgz"
+      sha256 "a24622c2f5107d607a366cce7b2d2e9dee3ec34631c9fcba3077cc305e45326e"
     end
   end
 
   # The persona skill pack ships in the npm wrapper package, not in the binary.
   resource "skills" do
-    url "https://registry.npmjs.org/@pugi/cli/-/cli-1.0.0-alpha.251.tgz"
-    sha256 "fd8ce180e5f792b4c6005628e03503aaf8524dafb83a6324eeeb58a697079dc4"
+    url "https://registry.npmjs.org/@pugi/cli/-/cli-1.0.0-alpha.252.tgz"
+    sha256 "2e7770c3bd7d705db063b50f25b4d85a1b79b5c2b4d91363b4c2d27eefc5a5b4"
   end
 
   def install
