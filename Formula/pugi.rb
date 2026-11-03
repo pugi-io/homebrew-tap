@@ -1,37 +1,37 @@
-# Written by the @pugi/cli release (pugi-core packages/opencode/script/pugi-homebrew.ts).
+# Written by the @pugi/cli release.
 # Do not edit by hand: the next release overwrites this file.
 class Pugi < Formula
   desc "Pugi CLI: an AI product team in your terminal"
   homepage "https://pugi.io"
-  version "1.0.0-alpha.264"
+  version "1.0.0-alpha.265"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://registry.npmjs.org/@pugi/cli-darwin-arm64/-/cli-darwin-arm64-1.0.0-alpha.264.tgz"
-      sha256 "2f8d21ffd7c4288272448b14598ac1ae24d9638293d0a13c6c824ddc296f938c"
+      url "https://registry.npmjs.org/@pugi/cli-darwin-arm64/-/cli-darwin-arm64-1.0.0-alpha.265.tgz"
+      sha256 "c3851c75d453b8223c39daee4500e047db241f47b52d51faf73e243ccd7d130f"
     end
     on_intel do
-      url "https://registry.npmjs.org/@pugi/cli-darwin-x64/-/cli-darwin-x64-1.0.0-alpha.264.tgz"
-      sha256 "808aa10892b6faeee04868d83c83e086dcb303f70b5ada3b26c42b187cc7617e"
+      url "https://registry.npmjs.org/@pugi/cli-darwin-x64/-/cli-darwin-x64-1.0.0-alpha.265.tgz"
+      sha256 "f333b0b5c444a6f18ecda925e7cb113ee9823fca6030a7f00b7f4d8a155cc642"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://registry.npmjs.org/@pugi/cli-linux-arm64/-/cli-linux-arm64-1.0.0-alpha.264.tgz"
-      sha256 "0b2e545a72b9603499f8478615df551c7ba39ede818cfb352226687da6b0abb8"
+      url "https://registry.npmjs.org/@pugi/cli-linux-arm64/-/cli-linux-arm64-1.0.0-alpha.265.tgz"
+      sha256 "a4c7f4e1cc4d43123fc1351d1097778bb8a2623371af19d374ec4e69a076548d"
     end
     on_intel do
-      url "https://registry.npmjs.org/@pugi/cli-linux-x64/-/cli-linux-x64-1.0.0-alpha.264.tgz"
-      sha256 "b69231f0bf244504672b3f21c1887af8439e8095602eebc420036550cfdfb899"
+      url "https://registry.npmjs.org/@pugi/cli-linux-x64/-/cli-linux-x64-1.0.0-alpha.265.tgz"
+      sha256 "422a78902a0dbe5edf71cabec0b27f1ee88f969d56fd1fe13378fe796b6d39f7"
     end
   end
 
   # The persona skill pack ships in the npm wrapper package, not in the binary.
   resource "skills" do
-    url "https://registry.npmjs.org/@pugi/cli/-/cli-1.0.0-alpha.264.tgz"
-    sha256 "602d3a122cd46c197a7595f8e233b41519f78e0cc37a56f8cccfdb12dc73c072"
+    url "https://registry.npmjs.org/@pugi/cli/-/cli-1.0.0-alpha.265.tgz"
+    sha256 "088fe6ffc24f925496f5d49144b6fa47a2ff0dfe02576c4b362afd3fea7f8b79"
   end
 
   def install
